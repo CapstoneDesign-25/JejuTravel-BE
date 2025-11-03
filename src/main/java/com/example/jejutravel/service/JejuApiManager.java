@@ -128,7 +128,7 @@ public class JejuApiManager {
         return new PageResponse<>(numOfRows, pageNo, totalCount, result);
     }
 
-    public PageResponse<PublicToiletResponse> fetchPublicToilet(String apiUrl, int pageNo) throws JsonProcessingException {
+    public PageResponse<PublicToiletResponse> fetchPublicToilet(String jsonResponse, int pageNo) throws JsonProcessingException {
         List<PublicToiletResponse> result = new ArrayList<>();
         int numOfRows = 5; // 한 페이지에 5개 data 씩 표출.
         int totalCount = 0; // 전체 data 개수.
@@ -136,7 +136,8 @@ public class JejuApiManager {
         try {
             // JSON 파싱 및 재구성
             ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode rootNode = objectMapper.readTree(apiUrl.toString()); //공공와이파이 제공 api에서 결과 받아옴
+            JsonNode rootNode = objectMapper.readTree(jsonResponse);
+            //JsonNode rootNode = objectMapper.readTree(apiUrl.toString()); //공공와이파이 제공 api에서 결과 받아옴
 
             JsonNode dataArray = rootNode.path("response").path("body").path("items").path("item"); //결과의 item 부분
             totalCount = rootNode.path("response").path("body").path("totalCount").asInt(); // 결과의 total count 부분을 int로 가져오기
