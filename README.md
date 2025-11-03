@@ -39,11 +39,6 @@ $ npm run dev
 <br/>
 
 # 2. Team Members (팀원 및 팀 소개)
-| 김민 | 김현지 | 김혜연 | 방재경 | 방채원 | 
-|:------:|:------:|:------:|:------:|:------:|
-| <img src="https://avatars.githubusercontent.com/u/59240554?v=4" alt="김민" width="150"> | <img src="https://avatars.githubusercontent.com/u/107786171?v=4" alt="김현지" width="150"> | <img src="https://avatars.githubusercontent.com/u/85014114?v=4" alt="김혜연" width="150"> | <img src="https://avatars.githubusercontent.com/u/173883601?v=4" alt="방재경" width="150"> |<img src="https://avatars.githubusercontent.com/u/118799810?v=4" alt="방채원" width="150"> |
-| PL, BE | FE | BE | FE | BE |
-| [GitHub](https://github.com/doraemon49) | [GitHub](https://github.com/LOCAL-HJ) | [GitHub](https://github.com/KimHyeyeonn) | [GitHub](https://github.com/Jae-kyoung) |[GitHub](https://github.com/chaewon02) |
 
 <br/>
 <br/>
@@ -65,13 +60,6 @@ $ npm run dev
 <br/>
 
 # 4. Tasks & Responsibilities (작업 및 역할 분담)
-|  |  |  |
-|-----------------|-----------------|-----------------|
-| 김민    |  <img src="https://avatars.githubusercontent.com/u/59240554?v=4" alt="김민" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>백엔드 개발</li><li>공공 API</li><li>카카오 톡캘린더 API</li></ul>     |
-| 김현지   |  <img src="https://avatars.githubusercontent.com/u/107786171?v=4" alt="김민" width="100"> | <ul><li>프론트앤드 개발</li><li>디자인</li><li>API 연결</li></ul> |
-| 김혜연   |  <img src="https://avatars.githubusercontent.com/u/85014114?v=4" alt="김혜연" width="100">    |<ul><li>백엔드 개발</li><li>로컬 로그인</li><li>카카오 로그인</li></ul>  |
-| 방재경    |  <img src="https://avatars.githubusercontent.com/u/173883601?v=4" alt="방재경" width="100">    |  <ul><li>프론트앤드 개발</li><li>디자인</li></ul>    
-| 방채원    |  <img src="https://avatars.githubusercontent.com/u/118799810?v=4" alt="방채원" width="100">    | <ul><li>백엔드 개발</li><li>공공 API</li><li>리뷰 DB</li><li>배포 (AWS)</li></ul>    |
 
 <br/>
 <br/>
