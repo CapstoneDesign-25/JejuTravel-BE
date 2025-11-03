@@ -42,7 +42,7 @@ public class StayController {
 		String apiUrl = "";
 
 		if(sigunguCode == 0 && stayType.equals("")){
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchStay1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchStay2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -51,7 +51,7 @@ public class StayController {
 				"&areaCode=39" +
 				"&_type=json";
 		} else if(sigunguCode != 0 && stayType.equals("")){
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchStay1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchStay2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -61,7 +61,7 @@ public class StayController {
 				"&sigunguCode=" + sigunguCode +
 				"&_type=json";
 		} else if(sigunguCode == 0 && !stayType.equals("")){
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchStay1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchStay2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -71,7 +71,7 @@ public class StayController {
 				"&" + stayType + "=1" +
 				"&_type=json";
 		}else if(sigunguCode != 0 && !stayType.equals("")){
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchStay1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchStay2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -100,7 +100,7 @@ public class StayController {
 		String serviceKey = apiKey;
 		String encodedServiceKey = URLEncoder.encode(serviceKey, StandardCharsets.UTF_8);
 		String encodedKeyword = URLEncoder.encode(keyword, StandardCharsets.UTF_8);
-		String apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchKeyword1" +
+		String apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchKeyword2" +
 			"?serviceKey=" + encodedServiceKey +
 			"&numOfRows=10" +
 			"&pageNo=" + pageNo +
@@ -125,17 +125,16 @@ public class StayController {
 
 		String serviceKey = apiKey;
 		String encodedServiceKey = URLEncoder.encode(serviceKey, StandardCharsets.UTF_8);
-		String apiUrl = "https://apis.data.go.kr/B551011/ChsService1/detailCommon1" +
-			"?serviceKey=" + encodedServiceKey +
-			"&numOfRows=10" +
-			"&pageNo=1"  +
-			"&MobileOS=ETC" +
-			"&MobileApp=JejuTravel" +
-			"&contentId=" + contentId +
-			"&defaultYN=Y&firstImageYN=Y&areacodeYN=Y&addrinfoYN=Y&mapinfoYN=Y&overviewYN=Y&transGuideYN=Y&catcodeYN=Y" +
-			"&_type=json" ;
+		String apiUrl = "https://apis.data.go.kr/B551011/ChsService2/detailCommon2" +
+				"?serviceKey=" + encodedServiceKey +
+				"&numOfRows=10" +
+				"&pageNo=1" +
+				"&MobileOS=ETC" +
+				"&MobileApp=JejuTravel" +
+				"&contentId=" + contentId +
+				"&_type=json";;
 
-		String apiUrl2 = "https://apis.data.go.kr/B551011/ChsService1/detailIntro1" +
+		String apiUrl2 = "https://apis.data.go.kr/B551011/ChsService2/detailIntro2" +
 			"?serviceKey=" + encodedServiceKey +
 			"&numOfRows=10" +
 			"&pageNo=1"  +
