@@ -41,7 +41,7 @@ public class ShoppingController {
 		String apiUrl = "";
 
 		if(sigunguCode == 0){
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/areaBasedList1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/areaBasedList2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -51,7 +51,7 @@ public class ShoppingController {
 				"&contentTypeId=79" +
 				"&_type=json";
 		} else {
-			apiUrl = "https://apis.data.go.kr/B551011/ChsService1/areaBasedList1" +
+			apiUrl = "https://apis.data.go.kr/B551011/ChsService2/areaBasedList2" +
 				"?serviceKey=" + encodedServiceKey +
 				"&numOfRows=10" +
 				"&pageNo=" + pageNo +
@@ -79,7 +79,7 @@ public class ShoppingController {
 		String serviceKey = apiKey;
 		String encodedServiceKey = URLEncoder.encode(serviceKey, StandardCharsets.UTF_8);
 		String encodedKeyword = URLEncoder.encode(keyword, StandardCharsets.UTF_8);
-		String apiUrl = "https://apis.data.go.kr/B551011/ChsService1/searchKeyword1" +
+		String apiUrl = "https://apis.data.go.kr/B551011/ChsService2/searchKeyword2" +
 			"?serviceKey=" + encodedServiceKey +
 			"&numOfRows=10" +
 			"&pageNo=" + pageNo +
@@ -104,17 +104,16 @@ public class ShoppingController {
 
 		String serviceKey = apiKey;
 		String encodedServiceKey = URLEncoder.encode(serviceKey, StandardCharsets.UTF_8);
-		String apiUrl = "https://apis.data.go.kr/B551011/ChsService1/detailCommon1" +
-			"?serviceKey=" + encodedServiceKey +
-			"&numOfRows=10" +
-			"&pageNo=1"  +
-			"&MobileOS=ETC" +
-			"&MobileApp=JejuTravel" +
-			"&contentId=" + contentId +
-			"&defaultYN=Y&firstImageYN=Y&areacodeYN=Y&addrinfoYN=Y&mapinfoYN=Y&overviewYN=Y&transGuideYN=Y&catcodeYN=Y" +
-			"&_type=json" ;
+		String apiUrl = "https://apis.data.go.kr/B551011/ChsService2/detailCommon2" +
+				"?serviceKey=" + encodedServiceKey +
+				"&numOfRows=10" +
+				"&pageNo=1" +
+				"&MobileOS=ETC" +
+				"&MobileApp=JejuTravel" +
+				"&contentId=" + contentId +
+				"&_type=json";
 
-		String apiUrl2 = "https://apis.data.go.kr/B551011/ChsService1/detailIntro1" +
+		String apiUrl2 = "https://apis.data.go.kr/B551011/ChsService2/detailIntro2" +
 			"?serviceKey=" + encodedServiceKey +
 			"&numOfRows=10" +
 			"&pageNo=1"  +
