@@ -37,3 +37,9 @@ out/
 .vscode/
 
 jwt.yml
+
+# Environment files
+.env
+.env.local
+.env.dev
+.env.prod
