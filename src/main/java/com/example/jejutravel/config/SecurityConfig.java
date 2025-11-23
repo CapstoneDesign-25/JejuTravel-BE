@@ -1,5 +1,6 @@
 package com.example.jejutravel.config;
 
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.springframework.context.annotation.Bean;
@@ -37,11 +38,11 @@ public class SecurityConfig {
                     @Override
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration config = new CorsConfiguration();
-                        config.setAllowedOrigins(Collections.singletonList("http://localhost:5173"));
+                        config.setAllowedOrigins(Arrays.asList("http://localhost:5173", "http://172.31.40.31:5173", "172.31.40.31"));
                         config.setAllowedMethods(Collections.singletonList("*"));
                         config.setAllowCredentials(true);
                         config.setAllowedHeaders(Collections.singletonList("*"));
-                        config.setExposedHeaders(Collections.singletonList("New-Access-Token"));
+                        config.setExposedHeaders(Arrays.asList("Authorization","Content-Type", "New-Access-Token"));
                         config.setMaxAge(3600L);
                         return config;
                     }
