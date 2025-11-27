@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    image: kimhyeyeonn/back:1.0
+    image: kimhyeyeonn/back:2.1
     container_name: backend-container
     depends_on:
       database:
