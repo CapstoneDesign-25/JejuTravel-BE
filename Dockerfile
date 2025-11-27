@@ -1,7 +1,7 @@
 FROM eclipse-temurin:17-jdk
 
 # Python 설치
-RUN apk update && apk add --no-cache python3 py3-pip
+RUN apt-get update && apt-get install -y python3 python3-pip
 
 # googletrans 모듈 설치
 RUN pip3 install googletrans==4.0.0-rc1
