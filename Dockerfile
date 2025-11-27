@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jdk
 
 # Python 설치
 RUN apk update && apk add --no-cache python3 py3-pip
