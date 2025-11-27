@@ -4,7 +4,7 @@ FROM eclipse-temurin:17-jdk
 RUN apt-get update && apt-get install -y python3 python3-pip
 
 # googletrans 모듈 설치
-RUN pip3 install googletrans==4.0.0-rc1
+RUN pip3 install googletrans==3.1.0a0 --break-system-packages
 
 # 환경 변수 설정
 ENV PATH="/usr/local/bin:${PATH}"
